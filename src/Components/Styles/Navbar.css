@@ -1,0 +1,136 @@
+.navbar {
+  /* border: 2px solid red; */
+  height: 14vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0px;
+  color: #f3f3f3;
+}
+.navbar a {
+  color: #222222de;
+  font-weight: 400;
+}
+.nav-container {
+  height: inherit;
+  position: relative;
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 90%;
+  margin: 2px auto;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-logo img {
+  width: 157px;
+  /* padding: 2px; */
+  height: auto;
+}
+.hide-bg {
+  height: 5rem;
+  width: 5rem;
+  border: 2px solid darkblue;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+.navbar ul li {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  list-style: none;
+}
+
+.task-box button {
+  border: 1px solid #f9ac25;
+  width: 151px;
+  height: 36px;
+  border-radius: 32px;
+  background: #f3f3f3 !important;
+  cursor: pointer;
+}
+.task-box button span {
+  color: #f9ac25;
+  padding-left: 1rem;
+}
+.heart-icon img {
+  width: 28px;
+  height: 24px;
+}
+
+.sidebar {
+  display: none;
+}
+
+/* ==========media query=========== */
+@media screen and (max-width: 1000px) {
+  .navbar ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+    width: 190px;
+    top: 0;
+    right: 0px;
+    /* transform: translateX(0px); */
+    bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 0 2px #1d364e;
+    z-index: 1;
+    line-height: 20px;
+    /* border: 2px solid red; */
+    transition: 0.6s;
+  }
+  .hide-menu {
+    right: -200px !important;
+    /* transform: translateX(180px);  */
+  }
+  .navbar ul li {
+    margin: 10px;
+  }
+  .sidebar {
+    display: block;
+    position: absolute;
+    top: 2;
+    right: 0;
+    padding: 10px;
+    z-index: 1;
+    /* border: 2px solid #fff; */
+  }
+}
+@media screen and (max-width: 450px) {
+  .nav-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .nav-logo span {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .navbar ul {
+    padding-top: 5rem;
+    width: 120px;
+    line-height: 10px;
+    /* border: 2px solid red; */
+    transition: 0.6s;
+  }
+  .navbar ul li {
+    font-size: 0.6rem !important;
+  }
+  .navbar ul button {
+    font-size: 0.6rem !important;
+    padding: 2px;
+    height: 30px;
+    width: 90px;
+  }
+}

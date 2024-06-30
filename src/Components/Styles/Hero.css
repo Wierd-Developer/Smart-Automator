@@ -1,0 +1,92 @@
+.hero {
+  /* border: 2px solid red; */
+  position: relative;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  /* color: #fff !important; */
+  justify-content: center;
+
+  background-image: url("https://s3-alpha-sig.figma.com/img/258c/d838/382cd57f9001761f95a984b0ba1c235c?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JchQRqjTvDXqain8eboZOK7c-c4Zfr33P7FuSB8RlngUG4ls6Hc7i0Y7dGp4Sil5--J9Rx06t7Bf7xufi-i0V8owWBEpaRsuAupPqRy6jQ4pbvyFOWTydGVSnGfwtOPyNatZRkBQqs8mtcYXW9qyztympwJWmV4MojBawLuDT7HtWGA-4ykdn8VxRdm1YrVu4z88oI2rpJrZyjQwqSDWL3Tzy8eS~pkcbJyF7ONYHYL-eOAZpRmUo8vLf9YqQ68Z6zN9JkNcun6Ih2N3wLM6OM1iwyiqRgJi3KwU97ToHAMoiPsTSIr5neRs~k5UJxkfEjUN1eeJk4r~yS~6~KPajg__");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-blend-mode: multiply; */
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #171616;
+  opacity: 0.85;
+}
+.hero__container {
+  text-align: center;
+}
+.hero__container h1 {
+  color: #fff;
+  filter: brightness(100%);
+  margin-bottom: 30px;
+  letter-spacing: 1.8px;
+  font-size: 2.8rem;
+}
+.hero__container h4 {
+  margin: 20px 0px;
+  font-weight: 200;
+  color: #fff !important;
+  filter: brightness(100%);
+  letter-spacing: 1.2px;
+}
+.serach-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  filter: brightness(100%);
+  width: 70%;
+  border-radius: 30px;
+  margin: auto;
+  height: 40px;
+  background: transparent !important;
+  /* padding-top: 10px; */
+}
+.serach-box input {
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 90%;
+  border-radius: 30px 0px 0px 30px;
+  background: transparent;
+  color: #fff;
+  padding-left: 10px;
+}
+.serach-box input::placeholder {
+  padding-left: 10px;
+  color: rgba(255, 255, 255, 0.479);
+}
+.serach-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9ac25;
+  color: #fff;
+  /* border: 1px solid red; */
+  border-radius: 0px 30px 30px 0px;
+  width: 50px;
+  height: 40px;
+}
+@media screen and (max-width: 768px) {
+  .hero__container {
+    padding: 4px;
+    line-height: 30px;
+  }
+  .hero__container h1 {
+    letter-spacing: 1.2px;
+    font-size: 2rem;
+    line-height: 40px !important;
+  }
+  .hero__container h4 {
+    font-size: 0.8rem;
+    letter-spacing: 1.2px;
+    margin-top: -20px;
+  }
+}

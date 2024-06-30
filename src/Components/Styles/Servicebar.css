@@ -1,0 +1,68 @@
+.service-bar {
+  /* border: 2px solid green; */
+  height: 20vh;
+  margin-top: 2rem;
+  width: 100%;
+}
+.service-bar h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.services-title {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 2px solid #222; */
+}
+.services-title a {
+  color: #0b0a0af5;
+}
+.services-title div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: #f9ac25;
+  /* border: 1px solid red; */
+  transition: all 0.8s ease-in-out;
+  box-shadow: 0px 0px 14px #c3984e;
+}
+.services-title div:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 16px #222;
+}
+.services-title h6 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .services-title div {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+  .service-bar {
+    padding: 0px;
+    width: 100%;
+  }
+  .services-title h6 {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .services-title div {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    gap: 20px;
+  }
+}

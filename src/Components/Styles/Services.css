@@ -1,0 +1,24 @@
+.services {
+  /* border: 2px solid red; */
+  height: 125vh;
+  background-color: #f9ab2532;
+}
+.services-container {
+  width: 90%;
+  margin: auto;
+  padding-top: 2rem;
+  /* display: flex; */
+}
+.services-container h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+@media screen and(max-width: 768px) {
+  .services-container {
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+  }
+}
